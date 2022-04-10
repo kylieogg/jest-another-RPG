@@ -1,4 +1,4 @@
-const Enemy = require('../lib.Enemy.js');
+const Enemy = require('../lib/Enemy.js');
 const Potion = require('../lib/Potion.js');
 
 jest.mock('../lib/Potion.js');
@@ -42,7 +42,7 @@ test("gets enemy's attack value", () => {
     enemy.strength = 10;
 
     expect(enemy.getAttackValue()).toBeGreaterThanOrEqual(5);
-    expect(enemy.getAttachValue()).toBeLessThanOrEqual(15);
+    expect(enemy.getAttackValue()).toBeLessThanOrEqual(15);
 });
 
 test("subtracts from enemy's health", () => {
